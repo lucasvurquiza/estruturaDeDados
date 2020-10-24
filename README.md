@@ -5,10 +5,10 @@
 ### Desenvolvido em C:
 
 * [Lista Circular Simplesmente Encadeada](https://github.com/lucasvurquiza/estruturaDeDados/blob/main/C/listaCircularSimplesmenteEncadeada.c)
-
 * [Lista Duplamente Encadeada](https://github.com/lucasvurquiza/estruturaDeDados/blob/main/C/listaDuplamenteEncadeada.c)
-
 * [Pilha](https://github.com/lucasvurquiza/estruturaDeDados/blob/main/C/pilha.c)
+* [Árvore Binária](https://github.com/lucasvurquiza/estruturaDeDados/blob/main/C/tree.c)
+* [Árvore AVL](https://github.com/lucasvurquiza/estruturaDeDados/blob/main/C/treeAvl.c)
 
 ### Desenvolvido em Java:
 
