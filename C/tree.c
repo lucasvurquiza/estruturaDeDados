@@ -9,11 +9,9 @@ typedef struct nodeTree {
     
 } nodeTree;
 
-
 nodeTree* creatreNull(){
    return NULL;   
 }
-
 
 nodeTree* create(int value, nodeTree* treeLeft, nodeTree* treeRight){
    nodeTree* t=(nodeTree*) malloc(sizeof(nodeTree));
@@ -41,9 +39,6 @@ void insert(nodeTree **t, int value){
         }
     }
 }
-
-
-
 
 int treeClear(nodeTree*  t){
     return t == NULL;
@@ -74,8 +69,6 @@ void printTree(nodeTree*  t){
     }
 }
 
-
-
 void printEmOrdem(nodeTree *t){
     if(t != NULL){
         printEmOrdem(t->left);
@@ -84,7 +77,6 @@ void printEmOrdem(nodeTree *t){
     }    
 }
 
-
 void printPosOrdem(nodeTree *t){
     if(t != NULL){
         printPosOrdem(t->left);
@@ -92,7 +84,6 @@ void printPosOrdem(nodeTree *t){
         printf("\n%i", t->value);
     }    
 }
-
 
 void printPreOrdem(nodeTree *t){
     if(t != NULL){
@@ -115,8 +106,6 @@ int maior(int a, int b){
     else
         return b;
 }
-
-
 
 int altura(nodeTree *t){
    if((t == NULL) || (t->left == NULL && t->right == NULL))
@@ -151,8 +140,7 @@ void print2D(nodeTree *root){
     print2DUtil(root, 0);
 }
 
-nodeTree *maiorNoDireita(nodeTree **t){
-    
+nodeTree *maiorNoDireita(nodeTree **t){  
     if((*t)->right != NULL) {
        return maiorNoDireita(&(*t)->right);
     }  else {
@@ -168,8 +156,7 @@ nodeTree *maiorNoDireita(nodeTree **t){
     }
 }
 
-nodeTree *menorNoEsquerda(nodeTree **t)
-{
+nodeTree *menorNoEsquerda(nodeTree **t){
     if((*t)->left != NULL)
     {
        return menorNoEsquerda(&(*t)->left);
@@ -188,7 +175,6 @@ nodeTree *menorNoEsquerda(nodeTree **t)
         return tTemp;
     }
 }
-
 
 void removeNode(nodeTree **root, int value){
     if(*root == NULL){   // esta verificacao serve para caso o numero nao exista na arvore.
